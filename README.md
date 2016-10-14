@@ -1,5 +1,6 @@
-# BShop
-*BShop* - A Beaver Builder WooCommerce Child theme
+# BShop v1.0
+
+**BShop** - A Beaver Builder WooCommerce Child theme
 
 # Installation
 
@@ -11,12 +12,12 @@ Make sure you already installed the Beaver Builder Theme. Next follow this steps
 
 # Import Theme Settings
 
-1. Install the Customizer Import/Export plugin
-2. Now navigate to Dashboard -> Appearance -> Customize
-3. Click on "Export/Import" panel
-4. Browse the dat file (file is loacting in bshop/dat-file folder)
+1. Install the **Customizer Import/Export** plugin
+2. Now navigate to **Dashboard -> Appearance -> Customize**
+3. Click on **"Export/Import"** panel
+4. Browse the dat file (file is loacting in **bshop/dat-file** folder)
 5. Click on the button 
-6. Later you can delete the *dat-file* folder from bshop folder
+6. Later you can delete the **dat-file** folder from bshop folder
 
 # Credit
 
