@@ -1,0 +1,408 @@
+/*
+Theme Name: BShop
+Theme URI: http://www.wpbeaverbuilder.com
+Version: 1.0
+Description: An eCommerce child theme of Beaver Builder Theme.
+Author: WP Beaver World
+Author URI: http://www.wpbeaverworld.com
+template: bb-theme
+*/
+
+/* # General
+------------------------------------------------ */
+
+button,
+input[type="button"],
+input[type="submit"],
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit,
+.woocommerce #content input.button,
+.woocommerce-page a.button,
+.woocommerce-page button.button,
+.woocommerce-page input.button,
+.woocommerce-page #respond input#submit,
+.woocommerce-page #content input.button,
+.added_to_cart {
+	background: #333;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 6px 12px;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce #content input.button:hover,
+.woocommerce-page a.button:hover,
+.woocommerce-page button.button:hover,
+.woocommerce-page input.button:hover,
+.woocommerce-page #respond input#submit:hover,
+.woocommerce-page #content input.button:hover,
+.added_to_cart:hover {
+	background: #eb5139;
+	border: none;
+	color: #fff;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="number"],
+input[type="search"],
+textarea,
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea,
+.woocommerce form .form-row select,
+.woocommerce table.cart td.actions .coupon .input-text,
+.woocommerce-page form .form-row input.input-text,
+.woocommerce-page form .form-row textarea,
+.woocommerce-page form .form-row select,
+.woocommerce-page table.cart td.actions .coupon .input-text,
+.select2-container .select2-choice,
+.select2-container .select2-choice .select2-arrow b::after {
+	border-radius: 0;
+}
+
+select {
+	-webkit-appearance: none;       
+	-moz-appearance: none;    
+	appearance: none;
+	background: #fff url('images/down-arrow.png')  no-repeat;
+	background-position: right 1px;
+	border: 1px solid #eee;
+    padding: 10px 55px 10px 15px;
+    border-radius: 0;
+}
+
+a {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+a:hover,
+ul.products li a:hover {
+	text-decoration: none;
+}
+
+/* # Header Top Bar
+------------------------------------------------ */
+
+.fl-page-bar {
+	border-color: #eee;
+}
+
+@media only screen and (max-width: 767px) {
+	.fl-page-bar {
+		padding-bottom: 5px;
+	}
+}
+
+.fl-page-bar .text-right {
+    margin-top: 4px
+}
+
+.call-us {
+	margin-right: 15px;
+}
+
+.call-us i,
+.email-us i {
+	margin-right: 5px;
+}
+
+.fl-page-bar-nav {
+	text-transform: uppercase;
+}
+
+.fl-page-bar-nav li a {
+	border-right: 1px solid #999;
+    line-height: 1;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.fl-page-bar-nav li:last-child a {
+	border: none;
+	padding-right: 0;
+}
+
+.fl-page-bar-nav a:before {
+	font-family: "FontAwesome";
+	margin-right: 5px;
+}
+
+.fl-page-bar-nav .my-account a:before {
+	content: "\f090";
+}
+
+.fl-page-bar-nav .wishlist a:before {
+	content: "\f004";
+}
+
+.fl-page-bar-nav .cart a:before {
+	content: "\f07a";
+}
+
+/* # Header
+------------------------------------------------ */
+@media only screen and (min-width: 992px) {
+	.fl-page-nav-right .fl-page-header-wrap {
+	    border-bottom: 1px solid #eee;
+	}
+}
+.fl-page-nav-right .fl-page-header-container {
+    padding-bottom: 6px;
+    padding-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar-nav > li.menu-item-has-children > a:after {
+		content: "\f107";
+	    display: inline-block;
+	    font-family: "FontAwesome";
+	    margin-left: 8px;
+	    position: relative;
+	    right: 0;
+	}
+
+	.fl-page-nav ul.nav > li > ul.sub-menu::before {
+	    border-color: transparent transparent #f5a89c;
+	    border-style: solid;
+	    border-width: 7px;
+	    content: "";
+	    display: inline-block;
+	    left: 14px;
+	    position: absolute;
+	    top: -15px;
+	}
+
+	.fl-page-nav ul.sub-menu {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-o-box-shadow: none;
+		box-shadow: none;
+		padding: 10px 0 0;
+	}
+
+	.fl-page-nav ul.nav ul li {
+		border-bottom: 1px solid #eee;
+		margin-bottom: 8px;
+		padding-bottom: 8px;
+	}
+
+	.fl-page-nav ul.nav ul li:last-child {
+		margin-bottom: 0px;
+	}
+
+	.fl-page-nav ul.sub-menu ul.sub-menu {
+	    padding-bottom: 0;
+	}
+}
+/* # Responsive Menu
+------------------------------------------------ */
+
+.sub-menu-toggle {
+	display: none;
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+	.fl-page-nav-right .fl-page-header-container {
+		padding: 35px 0 6px
+	}
+
+	.fl-page-nav-right .fl-page-header-container .fl-page-nav-col,
+	.fl-page-nav-right .fl-page-header-container .row {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.nav > li.menu-item-has-children > a {
+		display: inline-block;
+	}
+
+	.sub-menu-toggle {
+		background: #fbfbfb;
+		border-width: 0;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		-ms-border-radius: 0;
+		border-radius: 0;
+		display: block;
+		margin: 0 auto;
+		float: right;
+		overflow: hidden;
+		padding: 10px 15px;
+		position: absolute;
+		right: 10px;
+		top: 5px;
+		text-align: center;
+		visibility: visible;
+		z-index: 9999;
+	}
+
+	.sub-menu-toggle:hover,
+	.sub-menu-toggle:focus {
+		border-width: 0;
+	}
+
+	.sub-menu-toggle:before {
+		content: "\f078";
+		display: inline-block;
+		font: normal 16px/1 'FontAwesome';
+		text-rendering: auto;
+		-webkit-transform: translate(0, 0);
+		-ms-transform:     translate(0, 0);
+		transform:         translate(0, 0);
+	}
+
+	.sub-menu-toggle.activated:before {
+		content: "\f077"!important;
+	}
+
+}
+
+
+/* # Blog
+------------------------------------------------ */
+
+.fl-archive .fl-post,
+.fl-archive .fl-post:last-child {
+    background: #fefefe;
+    border: 1px solid #e6e6e6;
+    padding: 30px;
+}
+
+.fl-archive .fl-post .fl-post-title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.fl-archive .fl-post-meta.fl-post-meta-top {
+    color: #999;
+    font-size: 14px;
+}
+
+.fl-archive a.fl-post-more-link {
+    border-bottom: 2px solid #fefefe;
+    clear: both;
+    color: #eb5139;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0 0 3px;
+}
+
+.fl-archive a.fl-post-more-link:hover {
+	border-color: #333;
+	color: #333;
+}
+
+/* # Sidebar
+------------------------------------------------ */
+
+.woocommerce .fl-content-right {
+	float: right;
+}
+
+.woocommerce .fl-sidebar-left {
+	float: left;
+}
+
+@media only screen and (max-width: 991px) {
+	.woocommerce .fl-content-right,
+	.woocommerce .fl-sidebar-left {
+		float: none;
+	}
+}
+
+.fl-sidebar .fl-widget {
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 0 1px 1px #fefefe;
+    -moz-box-shadow: 0 0 1px 1px #fefefe;
+    -o-box-shadow: 0 0 1px 1px #fefefe;
+    box-shadow: 0 0 1px 1px #fefefe;
+    padding: 10px 20px 20px;
+}
+
+.fl-widget .fl-widget-title {
+	color: #333;
+	letter-spacing: 0.5px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+/*.fl-widget .fl-widget-title:after {
+	border-bottom: 1px solid #eb5139;
+	content: "";
+	display: block;
+	margin-top: 8px;
+	width: 35px;
+}*/
+
+.tagcloud a {
+	border: 1px solid #eee;
+	color: #999;
+	display: inline-block;
+	font-size: 14px!important;
+	margin: 0 5px 8px 0;
+	padding: 7px 12px
+}
+
+.tagcloud a:hover {
+	color: #eb5139;
+	border-color: #eb5139;
+}
+
+.fl-sidebar ul li {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 8px;
+}
+
+.fl-sidebar ul li:last-child,
+.fl-sidebar ul.product_list_widget li:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.fl-sidebar ul.product_list_widget li {
+	margin-bottom: 8px;
+}
+
+.fl-sidebar .fl-widget.woocommerce ul.product_list_widget li img {
+    border: 1px solid #eee;
+    padding: 3px;
+}
+
+/* # Footer
+------------------------------------------------ */
+
+.fl-page-footer {
+	border-top: none;
+}
+
+.fl-page-footer-container {
+	border-top: 1px solid #e6e6e6;
+}
