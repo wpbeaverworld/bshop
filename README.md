@@ -2,6 +2,8 @@
 
 **BShop** - A Beaver Builder WooCommerce Child theme
 
+Live Preview URL: http://bshop.wpbeaverworld.com
+
 # Installation
 
 Make sure you already installed the Beaver Builder Theme. Next follow this steps
